@@ -16,19 +16,15 @@ class Walker:
         return shape
         
     def step(self):
-        choice = r.randint(0,5)
-        if(choice == 0):
-            self.x += 1
-        elif(choice == 1):
-            self.y += 1
-        elif(choice == 2):
-            self.z += 1
-        elif(choice == 3):
-            self.x -= 1
-        elif(choice == 4):
-            self.y -= 1
-        else:
-            self.z -= 1
+       randX = r.uniform(-1,1)
+       randY = r.uniform(-1,1)
+       randZ = r.uniform(-1,1)
+     
+       
+       self.x += randX
+       self.y += randY
+       self.z += randZ
+      
 #time
 
 w = Walker()
